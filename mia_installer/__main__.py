@@ -97,7 +97,7 @@ if __name__ == "__main__":
     onemli(LANG['GETTING_STRING_SESSION'])
     stri, aid, ahash = main()
     basarili(LANG['SUCCESS_STRING'])
-    SyperStringKey = "MiaUserBot"
+    SyperStringKey = "Mia"
     baslangic = time()
 
 
@@ -107,14 +107,14 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "MiaUserBot"
+    SyperStringKey = "Mia"
     GiperStringKey = "MiaUserBot/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./SiriUserBot/"):
-        rm_r("./SiriUserBot/")
-    repo = Repo.clone_from(str1,"./MiaUserBot/", branch="master")
+    if os.path.isdir("./Mia/"):
+        rm_r("./Mia/")
+    repo = Repo.clone_from(str1,"./Mia/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
