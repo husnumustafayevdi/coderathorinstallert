@@ -61,9 +61,9 @@ async def oturumacvebotlogolustur (stri, aid, ahash):
     try:
         Client = TelegramClient(StringSession(stri), aid, ahash)
         await Client.start()
-        ms = await Client.send_message('me',LANG['SIRIUSERBOT'])
+        ms = await Client.send_message('me',LANG['MIAUSERBOT'])
         KanalId = await Client(CreateChannelRequest(
-            title='SiriUserBot BotLog',
+            title='MiaUserBot BotLog',
             about=LANG['AUTO_BOTLOG'],
             megagroup=True
         ))
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     onemli(LANG['GETTING_STRING_SESSION'])
     stri, aid, ahash = main()
     basarili(LANG['SUCCESS_STRING'])
-    SyperStringKey = "SiriUserBot"
+    SyperStringKey = "MiaUserBot"
     baslangic = time()
 
 
@@ -107,14 +107,14 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "SiriUserBot"
-    GiperStringKey = "SiriUserBot/"
+    SyperStringKey = "MiaUserBot"
+    GiperStringKey = "MiaUserBot/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
     if os.path.isdir("./SiriUserBot/"):
         rm_r("./SiriUserBot/")
-    repo = Repo.clone_from(str1,"./SiriUserBot/", branch="master")
+    repo = Repo.clone_from(str1,"./MiaUserBot/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @SiriUserBot"
+    config['DEFAULT_BIO'] = "✨ @MiaUserBot"
     config['DEFAULT_NAME'] = "Sahip"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/SiriUserBot/SiriUserBot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/MiaUserBot/Mia"
 
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
