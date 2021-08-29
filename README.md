@@ -1,24 +1,24 @@
-# Siri Installer
+# Mia Installer
 
-### SiriUserbot Otomatik Deployer
+### MiaUserbot Otomatik Deployer
 
-[Siri UserBot Reposu](https://github.com/SiriUserBot/siriuserbot)
+[Mia UserBot Reposu](https://github.com/MiaUserBot/mia)
 
 ## Kurulum
 ```sh
-git clone https://github.com/SiriUserBot/siriuserbot 
+git clone https://github.com/MiaUserBot/mia
 cd installer
 pip install -r requirements.txt
-python3 -m siri_installer
+python3 -m mia_installer
 ```
 
 ### Termux Kurulum
 
-``` bash <(curl -L https://bit.ly/3tUBVha) ```
+``` yakında```
 
 ## Geliştiriciler
 
-[![Berce](https://github.com/must4f.png?size=100)](https://t.me/siriuserbot)
+[![Mehmet](https://github.com/wiperowner.png?size=100)](https://t.me/wiperowner)
 
 ## Lisans
 Bu proje GPL-3.0 lisansı ile korunmaktadır.Tum Haklar Saklıdır
