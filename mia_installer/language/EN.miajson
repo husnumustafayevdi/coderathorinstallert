@@ -14,7 +14,7 @@
             "CREATING_APP": "(i) Creating application...",
             "SUCCESS_APP": "(✓) Application creation successful!",
             "DOWNLOADING": "(i) Downloading SiriUserBot...",
-            "DOWNLOADED": "(✓) SiriUserBot download successful!",
+            "DOWNLOADED": "(✓) MiaUserBot download successful!",
             "DEPLOYING": "(i) Initiating Deploy process... (This Process May Take Long)",
             "WRITING_CONFIG": "(i) Writing data...",
             "SET_LANG": "(✓) Bot is now in {} language!",
