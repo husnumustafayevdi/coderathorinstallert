@@ -13,7 +13,7 @@
             "SUCCESS_STRING": "(✓) StringSession alındı!",
             "CREATING_APP": "(i) Tətbiq yaradılır...",
             "SUCCESS_APP": "(✓) Tətbiq uğurla yaradıldı!",
-            "DOWNLOADING": "(i) SiriUserBot yüklənir...",
+            "DOWNLOADING": "(i) MiaUserBot yüklənir...",
             "DOWNLOADED": "(✓) MiaUserBot yüklənməsi uğurla başa çatdı!",
             "DEPLOYING": "(i) Deploy proseduru başlayır... (Bu prosedur çox vaxt apara bilər)",
             "WRITING_CONFIG": "(i) Məlumatlar yazılır...",
