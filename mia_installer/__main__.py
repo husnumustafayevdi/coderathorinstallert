@@ -4,7 +4,7 @@ from telethon import TelegramClient, functions
 from telethon.sessions import StringSession
 from rich.prompt import Prompt, Confirm
 from asyncio import get_event_loop
-from epic_installer import *
+from mia_installer import *
 from .astring import main
 from time import time
 from . import console
@@ -28,7 +28,7 @@ def connect (api):
     return heroku_conn
 
 def createApp (connect):
-    appname = "epicuserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
+    appname = "miauserbot" + str(time() * 1000)[-4:].replace(".", "") + str(random.randint(0,500))
     try:
         connect.create_app(name=appname, stack_id_or_name='container', region_id_or_name="eu")
     except requests.exceptions.HTTPError:
@@ -63,14 +63,14 @@ async def oturumacvebotlogolustur (stri, aid, ahash):
         await Client.start()
         ms = await Client.send_message('me',LANG['EPICUSERBOT'])
         KanalId = await Client(CreateChannelRequest(
-            title='EpicUserBot BotLog',
+            title='MiaUserBot BotLog',
             about=LANG['AUTO_BOTLOG'],
             megagroup=True
         ))
 
         KanalId = KanalId.chats[0].id
 
-        Photo = await Client.upload_file(file='epic.jpg')
+        Photo = await Client.upload_file(file='mia.jpg')
         await Client(EditPhotoRequest(channel=KanalId, 
             photo=Photo))
         msg = await Client.send_message(KanalId, LANG['DONT_LEAVE'])
@@ -107,14 +107,14 @@ if __name__ == "__main__":
     basarili(LANG['SUCCESS_APP'])
     onemli(LANG['DOWNLOADING'])
 
-    SyperStringKey = "EpicUserBot"
-    GiperStringKey = "erdembey0/"
+    SyperStringKey = "Mia"
+    GiperStringKey = "MiaUserBot/"
     InvalidKey = "http://github.com/" 
     str1 = InvalidKey+GiperStringKey+SyperStringKey
 
-    if os.path.isdir("./EpicUserBot/"):
-        rm_r("./EpicUserBot/")
-    repo = Repo.clone_from(str1,"./EpicUserBot/", branch="master")
+    if os.path.isdir("./Mia/"):
+        rm_r("./Mia/")
+    repo = Repo.clone_from(str1,"./Mia/", branch="master")
     onemli(LANG['DEPLOYING'])
     app = hgit(heroku, repo, appname)
     config = app.config()
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
     config['COUNTRY'] = COUNTRY
-    config['DEFAULT_BIO'] = "✨ @EpicUserBot"
+    config['DEFAULT_BIO'] = "✨ @MiaUserBot"
     config['DEFAULT_NAME'] = "Sahip"
     config['LANGUAGE'] = LANGUAGE
     config['GALERI_SURE'] = "60"
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     config['TMP_DOWNLOAD_DIRECTORY'] = "./downloads/"
     config['TZ'] = TZ
     config['TZ_NUMBER'] = "1"
-    config['UPSTREAM_REPO_URL'] = "https://github.com/erdembey0/epicuserbot"
+    config['UPSTREAM_REPO_URL'] = "https://github.com/miauserbot/mia"
     config['SEVGILI'] = "None"
     config['WARN_LIMIT'] = "3"
     config['WARN_MODE'] = "gmute"
