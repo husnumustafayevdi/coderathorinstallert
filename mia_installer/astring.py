@@ -1,9 +1,6 @@
-# Don't kang without permission #
-# @EpicUserBot #
-
 from telethon.errors import SessionPasswordNeededError, PhoneCodeInvalidError, PasswordHashInvalidError, PhoneNumberInvalidError, PhoneCodeExpiredError
 from telethon import TelegramClient, events, version
-from epic_installer import hata, bilgi, onemli, soru
+from mia_installer import hata, bilgi, onemli, soru
 from telethon.network import ConnectionTcpAbridged
 from telethon.sessions import StringSession
 from telethon.utils import get_display_name
@@ -100,8 +97,8 @@ def main():
             bilgi(LANG['NEW_APP'])
             hashh = soup.find("input", {"name": "hash"}).get("value")
             bilgi("🔄 Uygulama Oluşturuluyor..")
-            app_title = choice(["sir", "epic", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
-            app_shortname = choice(["sir", "epic", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            app_title = choice(["sir", "mia", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
+            app_shortname = choice(["sir", "mia", "tg", "madelineproto", "telethon", "pyrogram"]) + choice(["user", "bt", "vue", "jsx", "python", "php"]) + choice(["", "_"]) + choice([str(randint(10000, 99999))])
             AppInfo = {
                 "hash": hashh,
                 "app_title": app_title,
