@@ -26,4 +26,4 @@ def importlang ():
     return COUNTRY, LANGUAGE, TZ
 
 COUNTRY, LANGUAGE, TZ = importlang()
-LANG = loads(open(f"./mia_installer/language/{LANGUAGE}.miajson", "r").read())["STRINGS"]
+LANG = loads(open(f"./epic_installer/language/{LANGUAGE}.epicjson", "r").read())["STRINGS"]
