@@ -1,9 +1,9 @@
 [tool]
 [tool.poetry]
-name = "EpicUserbot_Deployer"
+name = "MiaUserbot_Deployer"
 version = "1.0"
-description = "Automatic Deploy EpicUserBot to Heroku"
-authors = ["ErdemBey"]
+description = "Automatic Deploy MiaUserBot to Heroku"
+authors = ["Mia"]
 [tool.poetry.dependencies]
 python = "^3.8"
 bs4 = "*"
