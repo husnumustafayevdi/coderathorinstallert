@@ -125,7 +125,7 @@ if __name__ == "__main__":
     config['ANTI_SPAMBOT_SHOUT'] = 'True'
     config['API_HASH'] = ahash
     config['API_KEY'] = str(aid)
-    config['BOTLOG'] = "True"
+    config['BOTLOG'] = "False"
     config['BOTLOG_CHATID'] = "0"
     config['CLEAN_WELCOME'] = "True"
     config['CONSOLE_LOGGER_VERBOSE'] = "False"
